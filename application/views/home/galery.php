@@ -3,8 +3,7 @@
 <section class="py-5">
                 <div class="container px-5 my-5">
                     <div class="text-center mb-5">
-                        <h1 class="fw-bolder">Our Work</h1>
-                        <p class="lead fw-normal text-muted mb-0">Company portfolio</p>
+                        <h1 class="fw-bolder">Galeri</h1>
                     </div>
                     <div class="row gx-5">
                         <div class="col-lg-6">
@@ -32,12 +31,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="py-5 bg-light">
-                <div class="container px-5 my-5">
-                    <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                    <a class="btn btn-lg btn-primary" href="#!">Contact us</a>
                 </div>
             </section>
         </main>

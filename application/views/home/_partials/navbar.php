@@ -15,6 +15,7 @@
                                     <li><a class="dropdown-item" href="<?php echo site_url('blogpost')?>">Blog Post</a></li>
                                 </ul>
                             </li>
+                            <li class="nav-item"><a class="nav-link" href="<?php echo site_url('login')?>">Login</a></li>
                         </ul>
                     </div>
                 </div>

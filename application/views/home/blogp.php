@@ -83,7 +83,7 @@
                     </div>
                 </div>
             </section>
-            <?php $this->load->view("home/_partials/blog.php") ?>
+            <?php $this->load->view("home/_partials/artikel.php") ?>
 
 
             <?php $this->load->view("home/_partials/footer.php") ?>
