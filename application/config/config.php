@@ -36,8 +36,9 @@ $config['base_url'] = 'http://localhost/sidlb';
 |
 */
 $config['index_page'] = '';
-
+$autoload['libraries'] = array('database', 'session');
 /*
+
 |--------------------------------------------------------------------------
 | URI PROTOCOL
 |--------------------------------------------------------------------------
