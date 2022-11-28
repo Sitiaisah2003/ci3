@@ -49,7 +49,7 @@ class Artikel extends CI_Controller
         
         $this->load->view("admin/artikel/edit_form", $data);
     }
-
+   
     public function delete($id=null)
     {
         if (!isset($id)) show_404();

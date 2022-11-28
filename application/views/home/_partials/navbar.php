@@ -8,13 +8,8 @@
                             <li class="nav-item"><a class="nav-link" href="<?php echo site_url('about')?>">Profil</a></li>
                             <li class="nav-item"><a class="nav-link" href="<?php echo site_url('galery')?>">Galeri</a></li>
                             <li class="nav-item"><a class="nav-link" href="<?php echo site_url('faq')?>">FAQ</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                    <li><a class="dropdown-item" href="<?php echo site_url('bloghome')?>">Blog Home</a></li>
-                                    <li><a class="dropdown-item" href="<?php echo site_url('blogpost')?>">Blog Post</a></li>
-                                </ul>
-                            </li>
+                            <li class="nav-item"><a class="nav-link" href="<?php echo site_url('bloghome')?>">Blog</a></li>
+
                             <li class="nav-item"><a class="nav-link" href="<?php echo site_url('login')?>">Login</a></li>
                         </ul>
                     </div>

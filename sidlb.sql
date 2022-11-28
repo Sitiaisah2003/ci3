@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 27, 2022 at 05:03 PM
+-- Generation Time: Nov 28, 2022 at 07:45 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -39,8 +39,9 @@ CREATE TABLE `artikel` (
 --
 
 INSERT INTO `artikel` (`id`, `nama`, `isi`, `poto`) VALUES
-(63837, 'adit123', 'aditsdw23232', 'default.jpg'),
-(63837089, 'ads', 'ads', 'default.jpg');
+(6383, 'Perbaikan jalan Dusun Tekam Desa Lintah Betung', 'dilakukan oleh masyarakat dusun Tekam secara gotong royong dan dipantau oleh Kepala Desa Lintah betung dan kegiatan ini sudah berlangsung beberapa hari ', 'default.jpg'),
+(63837, 'Masyarakat Masih menggunaan Pelita', 'Sampai saat ini 4(empat) dusun masih menggunakan mesin ganset hanya sekitar 30% dan hampir 75% masyarakat masih menggunakan pelita untuk penerangan rumah karena sampai saat ini listrik masih belum mengair sampai dusun baru sampai desa', 'default.jpg'),
+(63839, 'Desa Lintah Betung kesulitan Sinyal', 'Masyarakat Desa kesulitan jika ingin berkomunikasi menggunakan telepone karena di kapung atau desa sangat kesulitan sinyal jika ingin berkomunikasi dengan keluarga harus pergi ke gunung untuk mencari sinyal dan sangat sulit untuk update berita berita ', 'default.jpg');
 
 -- --------------------------------------------------------
 

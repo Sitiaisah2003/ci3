@@ -57,11 +57,9 @@ $route['about'] = 'home/about';
 $route['galery'] = 'home/galery';
 $route['faq'] = 'home/faq';
 $route['bloghome'] = 'home/blogh';
-$route['blogpost'] = 'home/blogp';
+// $route['blogpost'] = 'home/blogp';
 $route['login'] = 'login';
 $route['admin'] = 'admin/home';
-
-
 
 
 
