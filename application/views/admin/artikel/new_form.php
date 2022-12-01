@@ -42,15 +42,16 @@
 							</div>
 
 
-
+							
 							<div class="form-group">
 								<label for="name">Photo</label>
 								<input class="form-control-file <?php echo form_error('poto') ? 'is-invalid':'' ?>"
-								 type="file" name="image" />
+								 type="file" name="userfile" />
 								<div class="invalid-feedback">
 									<?php echo form_error('poto') ?>
 								</div>
 							</div>
+							
 
 
 							<input class="btn btn-success" type="submit" name="btn" value="Save" />

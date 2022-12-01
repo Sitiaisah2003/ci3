@@ -10,7 +10,7 @@
                 <main>
                     <div class="container-fluid px-4">
                     <?php $this->load->view("admin/_partials/breadcumb.php") ?>
-
+                <p>Selamat Datang, <?php echo $this->session->userdata("email"); ?></p>
                     </div>
                 </main>
                 <?php $this->load->view("admin/_partials/footer.php") ?>

@@ -35,13 +35,14 @@ class Artikel_model extends CI_Model
 
     public function save()
     {
+       
         $post = $this->input->post();
         $this->id = uniqid();
         $this->nama = $post["nama"];
         $this->isi = $post["isi"];
+        
         return $this->db->insert($this->_table, $this);
     }
-
     public function update()
     {
         $post = $this->input->post();
