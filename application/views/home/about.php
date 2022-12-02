@@ -69,8 +69,8 @@
                     <div class="row gx-5 align-items-center">
                         <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="<?php echo base_url(); ?>galeri/zik.jpg" alt="..." /></div>
                         <div class="col-lg-6">
-                            <h2 class="fw-bolder">------------</h2>
-                            <p class="lead fw-normal text-muted mb-0">???????</p>
+                            <h2 class="fw-bolder">Muhammad Zikri L</h2>
+                            <p class="lead fw-normal text-muted mb-0">12210899</p>
                         </div>
                     </div>
                 </div>

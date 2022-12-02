@@ -1,3 +1,4 @@
+<?php 
 public function add()
     {
         $artikel = $this->artikel_model;
@@ -31,9 +32,5 @@ public function add()
         $this->load->view("admin/artikel/new_form");
     }
 
-    if ( $this->upload->do_upload('userfile'))
-        {
-            $poto = $this->upload->data();
-             $poto = $poto['file_name'];
-        }
-      
+  
+        ?>

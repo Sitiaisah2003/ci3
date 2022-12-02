@@ -22,12 +22,10 @@ class Artikel extends CI_Controller
         $artikel = $this->artikel_model;
         $validation = $this->form_validation;
         $validation->set_rules($artikel->rules());
-
-        if ($validation->run()) {
+           if ($validation->run()) {
             $artikel->save();
             $this->session->set_flashdata('success', 'Berhasil disimpan');
         }
-
         $this->load->view("admin/artikel/new_form");
     }
 

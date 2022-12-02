@@ -1,23 +1,22 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Artikel_model extends CI_Model
+class User_model extends CI_Model
 {
-    private $_table = "artikel";
+    private $_table = "user";
 
     public $id;
-    public $nama;
-    public $isi;
-    public $poto = "default.jpg";
+    public $email;
+    public $sandi;
 
     public function rules()
     {
         return [
-            ['field' => 'nama',
-            'label' => 'nama',
+            ['field' => 'email',
+            'label' => 'name',
             'rules' => 'required'],
 
-            ['field' => 'isi',
-            'label' => 'isi',
+            ['field' => 'sandi',
+            'label' => 'name',
             'rules' => 'required']
             
            
@@ -38,16 +37,16 @@ class Artikel_model extends CI_Model
        
         $post = $this->input->post();
         $this->id = uniqid();
-        $this->nama = $post["nama"];
-        $this->isi = $post["isi"];
+        $this->email = $post["email"];
+        $this->sandi = $post["sandi"];
         return $this->db->insert($this->_table, $this);
     }
     public function update()
     {
         $post = $this->input->post();
         $this->id = $post["id"];
-        $this->nama = $post["nama"];
-        $this->isi = $post["isi"];
+        $this->email = $post["email"];
+        $this->sandi = $post["sandi"];
         return $this->db->update($this->_table, $this, array('id' => $post['id']));
     }
 
