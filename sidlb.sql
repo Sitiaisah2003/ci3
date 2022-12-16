@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 28, 2022 at 07:45 AM
+-- Generation Time: Dec 02, 2022 at 02:27 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -28,10 +28,10 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `artikel` (
-  `id` int(11) NOT NULL,
-  `nama` varchar(255) DEFAULT NULL,
-  `isi` text NOT NULL,
-  `poto` varchar(255) DEFAULT 'default.jpg'
+  `id` varchar(64) NOT NULL,
+  `nama` varchar(255) NOT NULL,
+  `isi` varchar(255) NOT NULL,
+  `poto` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -39,9 +39,9 @@ CREATE TABLE `artikel` (
 --
 
 INSERT INTO `artikel` (`id`, `nama`, `isi`, `poto`) VALUES
-(6383, 'Perbaikan jalan Dusun Tekam Desa Lintah Betung', 'dilakukan oleh masyarakat dusun Tekam secara gotong royong dan dipantau oleh Kepala Desa Lintah betung dan kegiatan ini sudah berlangsung beberapa hari ', 'default.jpg'),
-(63837, 'Masyarakat Masih menggunaan Pelita', 'Sampai saat ini 4(empat) dusun masih menggunakan mesin ganset hanya sekitar 30% dan hampir 75% masyarakat masih menggunakan pelita untuk penerangan rumah karena sampai saat ini listrik masih belum mengair sampai dusun baru sampai desa', 'default.jpg'),
-(63839, 'Desa Lintah Betung kesulitan Sinyal', 'Masyarakat Desa kesulitan jika ingin berkomunikasi menggunakan telepone karena di kapung atau desa sangat kesulitan sinyal jika ingin berkomunikasi dengan keluarga harus pergi ke gunung untuk mencari sinyal dan sangat sulit untuk update berita berita ', 'default.jpg');
+('6388ff766e562', 'Perbaikan jalan Dusun Tekam Desa Lintah Betung', 'dilakukan oleh masyarakat dusun Tekam secara gotong royong dan dipantau oleh Kepala Desa Lintah betung dan kegiatan ini sudah berlangsung beberapa hari', 'default.jpg'),
+('6388ffa87694d', 'Masyarakat Masih menggunaan Pelita', 'Sampai saat ini 4(empat) dusun masih menggunakan mesin ganset hanya sekitar 30% dan hampir 75% masyarakat masih menggunakan pelita untuk penerangan rumah karena sampai saat ini listrik masih belum mengair sampai dusun baru sampai desa', 'default.jpg'),
+('6388ffc6d70f3', 'Desa Lintah Betung kesulitan Sinyal', 'Masyarakat Desa kesulitan jika ingin berkomunikasi menggunakan telepone karena di kapung atau desa sangat kesulitan sinyal jika ingin berkomunikasi dengan keluarga harus pergi ke gunung untuk mencari sinyal dan sangat sulit untuk update berita berita', 'default.jpg');
 
 -- --------------------------------------------------------
 
@@ -50,18 +50,21 @@ INSERT INTO `artikel` (`id`, `nama`, `isi`, `poto`) VALUES
 --
 
 CREATE TABLE `user` (
-  `id` int(255) NOT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `sandi` varchar(255) DEFAULT NULL,
-  `level` enum('admin','pegawai') DEFAULT NULL
+  `id` varchar(64) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `sandi` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `email`, `sandi`, `level`) VALUES
-(1, 'adit@gmail.com', '123', 'admin');
+INSERT INTO `user` (`id`, `email`, `sandi`) VALUES
+('6389fb588203e', 'pamungkas@gmail.com', '123'),
+('6389fb63395fd', 'leni@gmail.com', '123'),
+('6389fb6ed4f21', 'dinda@gmail.com', '123'),
+('6389fb85434ae', 'aisah@gmail.com', '123'),
+('6389fb90bc479', 'zikri@gmail.com', '123');
 
 --
 -- Indexes for dumped tables
@@ -78,22 +81,6 @@ ALTER TABLE `artikel`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `artikel`
---
-ALTER TABLE `artikel`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=638370012;
-
---
--- AUTO_INCREMENT for table `user`
---
-ALTER TABLE `user`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
