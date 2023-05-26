@@ -7,6 +7,7 @@ class User_model extends CI_Model
     public $id;
     public $email;
     public $sandi;
+    public $level;
 
     public function rules()
     {
@@ -36,9 +37,10 @@ class User_model extends CI_Model
     {
        
         $post = $this->input->post();
-        $this->id = uniqid();
+        $this->id = $post["id"];
         $this->email = $post["email"];
         $this->sandi = $post["sandi"];
+        $this->level = $post["level"];
         return $this->db->insert($this->_table, $this);
     }
     public function update()
@@ -47,6 +49,7 @@ class User_model extends CI_Model
         $this->id = $post["id"];
         $this->email = $post["email"];
         $this->sandi = $post["sandi"];
+        $this->level = $post["level"];
         return $this->db->update($this->_table, $this, array('id' => $post['id']));
     }
 

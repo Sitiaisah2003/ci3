@@ -1,7 +1,7 @@
 <footer class="bg-dark py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-5 text-white"><strong>Tentang</strong> <br><br>Sidlb adalah sebuah platform pelayanan publik<br> yang berfokus terhadap pelayanan di tingkat pemerintah desa</div></div>
+                    <div class="col-auto"><div class="small m-5 text-white"><strong>Tentang</strong> <br><br>SISMDLB adalah sebuah platform pelayanan publik<br> yang berfokus terhadap pelayanan di tingkat pemerintah desa</div></div>
                    
                  
                 </div>

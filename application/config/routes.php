@@ -60,6 +60,8 @@ $route['bloghome'] = 'home/blogh';
 // $route['blogpost'] = 'home/blogp';
 $route['login'] = 'login';
 $route['admin'] = 'admin/home';
+$route['pegawai'] = 'pegawai/home';
+$route['pdf'] = 'pdf';
 
 
 

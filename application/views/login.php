@@ -20,8 +20,14 @@
                                                 <input class="form-control" id="inputPassword" type="password" name="sandi" placeholder="Password" />
                                                 <label for="inputPassword">Password</label>
                                             </div>
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" id="level" type="text" name="level" placeholder="level" />
+                                                <label for="level">level</label>
+                                            </div>
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
                                                 <input type="submit" class="btn btn-primary" value="login">
+                                                <a href="<?php echo site_url('register') ?>" class="btn btn-success">Daftar</a>
+                                            </div>
                                             </div>
                                         </form>
                                     </div>

@@ -7,13 +7,17 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
-                            <a class="nav-link" href="<?php echo site_url('admin/artikel')?>">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                Artikel
-                            </a>
                             <a class="nav-link" href="<?php echo site_url('admin/user')?>">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 User
+                            </a>
+                            <a class="nav-link" href="<?php echo site_url('admin/sktm')?>">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                SKTM
+                            </a>
+                            <a class="nav-link" href="<?php echo site_url('admin/suratusaha')?>">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Surat Usaha
                             </a>
 
                         </div>

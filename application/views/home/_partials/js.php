@@ -14,3 +14,6 @@
         <script src="<?php echo base_url('js/admin/datatables.js')?>"></script>
         <script src="<?php echo base_url('js/admin/area.js')?>"></script>
         <script src="<?php echo base_url('js/admin/bar.js')?>"></script>
+        <script src="<?php echo base_url('assets/js/jquery-3.2.1.min.js')?>"></script>
+        <script src="<?php echo base_url('assets/js/moment.js')?>"></script>
+        <script src="<?php echo base_url('assets/js/toogle.js')?>"></script>
