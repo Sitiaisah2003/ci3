@@ -32,7 +32,8 @@ class login extends CI_Controller{
                 redirect(base_url('login'));
             }
         } else {
-            echo "Email dan Sandi salah !";
+            $data['error_message'] = "Username dan Sandi salah!";
+        $this->load->view('login', $data);
         }
 		// 	redirect(base_url("admin"));
 		// }else{
