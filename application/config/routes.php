@@ -62,6 +62,9 @@ $route['login'] = 'login';
 $route['admin'] = 'admin/home';
 $route['pegawai'] = 'pegawai/home';
 $route['pdf'] = 'pdf';
+$route['admin/sktm/terima/(:num)'] = 'sktm/terima/$1';
+$route['admin/sktm/tolak/(:num)'] = 'sktm/tolak/$1';
+
 
 
 

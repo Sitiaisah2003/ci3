@@ -12,6 +12,7 @@
         <link href="<?php echo base_url('css/styles.css') ?>" rel="stylesheet">
         <link rel="stylesheet" href="<?php echo base_url();?>css/style.css">
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="<?php echo base_url('styles.css') ?>" rel="stylesheet">
         <link href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">

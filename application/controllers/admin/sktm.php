@@ -44,6 +44,16 @@ class sktm extends CI_Controller {
         
         $this->load->view("admin/sktm/edit_form", $data);
     }
+    public function terima($id) {
+        $this->load->model('sktm_model');
+        $this->sktm_model->updateStatus($id, 'diterima');
+        redirect('admin/sktm');
+      }
+      public function tolak($id) {
+        $this->load->model('sktm_model');
+        $this->sktm_model->updateStatus($id, 'ditolak');
+        redirect('admin/sktm');
+      }
     public function delete($id=null)
     {
         if (!isset($id)) show_404();

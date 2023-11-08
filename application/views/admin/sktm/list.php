@@ -29,6 +29,7 @@
       <th>Pekerjaan</th>
       <th>Agama</th>
       <th>Alamat</th>
+      <th>Status</th>
     </tr>
   </thead>
   <tbody>
@@ -59,6 +60,7 @@
                                         <td>
 											<?php echo $sktm->alamat ?>
 										</td>
+                    <td><?php echo $sktm->status; ?></td>
                     <td width="250">
 											<a href="<?php echo site_url('admin/sktm/edit/'.$sktm->id) ?>"
 											 class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>

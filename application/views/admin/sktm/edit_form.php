@@ -105,6 +105,14 @@
 									<?php echo form_error('alamat') ?>
 								</div>
 							</div>
+							<div>
+    <label for="status">Status</label>
+    <select name="status" id="status">
+      <option value="menunggu" <?php echo ($sktm->status == 'menunggu') ? 'selected' : ''; ?>>Menunggu</option>
+      <option value="diterima" <?php echo ($sktm->status == 'diterima') ? 'selected' : ''; ?>>Diterima</option>
+      <option value="ditolak" <?php echo ($sktm->status == 'ditolak') ? 'selected' : ''; ?>>Ditolak</option>
+    </select>
+  </div>
 						
 							<input class="btn btn-success" type="submit" name="btn" value="Save" />
 						</form>
